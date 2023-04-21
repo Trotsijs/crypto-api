@@ -2,9 +2,7 @@
 
 Application for getting information about top Crypto-Currencies
 
----
-
-Data from  [Coinmarketcap](https://coinmarketcap.com/api/)
+- Data from  [Coinmarketcap](https://coinmarketcap.com/api/)
 
 
 
