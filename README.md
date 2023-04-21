@@ -6,7 +6,7 @@ Terminal application for getting information about top Crypto-Currencies
 
 1. Run `composer install`
 2. Get your API key from [Coinmarketcap](https://coinmarketcap.com/api/)
-3. Rename `.env.example to .env`
+3. Rename `.env.example` to `.env`
 4. Insert your API Key `API_KEY=YOUR_API_KEY`
 5. Run `php main.php`
 
