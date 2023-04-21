@@ -2,7 +2,12 @@
 
 Application for getting information about top Crypto-Currencies
 
-- Data from [Coinmarketcap](https://coinmarketcap.com/api/)
+### To run the application:
+
+- Run `composer install`
+- Get your API key from [Coinmarketcap](https://coinmarketcap.com/api/)
+- In **ApiClient.php** replace `$this->apiKey->getApiKey()`  with your API Key.
+- Run `php main.php`
 
 
 
