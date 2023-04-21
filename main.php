@@ -21,9 +21,19 @@ echo
 $input = readline(' ▶ PRESS "ENTER" TO LIST TOP 5 RANKED CRYPTO COINS ◀ ');
 
 
+function positive(string $number)
+{
+    if ($number > 0) {
+        echo ' ▲ '.$number;
+    } else {
+        echo ' ▼ '.$number;
+    }
+}
+
 if ($input == '') {
     echo "==================================", PHP_EOL;
     echo PHP_EOL;
+
 
     foreach ($cryptoCurrencies->data as $coin) {
         $crypto = new CryptoReport(
@@ -37,7 +47,8 @@ if ($input == '') {
 
         echo "(#{$crypto->getRank()}) {$crypto->getName()} [{$crypto->getSymbol()}]".PHP_EOL;
         echo '  ■  Price: $'.number_format($crypto->getPriceUsd(), 2).PHP_EOL;
-        echo '  ■  Price change 24h: '.number_format($crypto->getPriceChange24h(), 2).'%'.PHP_EOL;
+        echo '  ■  Price change 24h:';
+        echo positive(number_format($crypto->getPriceChange24h(), 2)).'%'.PHP_EOL;
         echo '  ■  Market Cap: $'.number_format($crypto->getMarketCap()).PHP_EOL;
         echo PHP_EOL;
         echo "==================================", PHP_EOL;
