@@ -4,12 +4,15 @@ Terminal application for getting information about top Crypto-Currencies
 
 ### To run the application:
 
-- Run `composer install`
-- Get your API key from [Coinmarketcap](https://coinmarketcap.com/api/)
-- Rename `.env.example to .env`
-- Insert your API Key `API_KEY=YOUR_API_KEY`
-- Run `php main.php`
+1. Run `composer install`
+2. Get your API key from [Coinmarketcap](https://coinmarketcap.com/api/)
+3. Rename `.env.example to .env`
+4. Insert your API Key `API_KEY=YOUR_API_KEY`
+5. Run `php main.php`
 
+### Resources
+
+* [Coinmarketcap Documentation](https://coinmarketcap.com/api/documentation/v1/)
 
 
 
